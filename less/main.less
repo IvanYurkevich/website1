@@ -1,0 +1,158 @@
+
+/*Colors*/
+@btn-color: #f7ae01;
+@icons-color: #70c849;
+@text-color: #292929;
+@bglight-color: #f3f2ef;
+@danger-color: ff0000;
+@bg-color: #ffffff;
+
+/*Basic settings*/
+html {
+font-family: sans-serif;
+padding: 0;
+
+}
+
+.headerPage {
+	background-image:url(../img/webislamov/bgimage1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+}
+.row {
+	margin-top: 15px;
+
+	;
+}
+.phoneLink {
+	line-height:70px;
+	font-size: 16px;
+	font-weight: 900;
+}
+.btn {
+	display: table;
+	width: 100%;
+	height: 70px;
+}
+.btnBlock {
+	display: table-cell;
+	vertical-align: middle;
+}
+.button {
+	background-color: @btn-color;
+	color: @text-color;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	&:hover {
+		background-color: darken(@btn-color, 10%)
+	}
+}
+.header {
+	margin-top: 10px;
+	text-transform: uppercase;
+    font-weight: 600;
+}
+.info {
+	display: block;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.price {
+	background-color: @icons-color;
+	padding: 10px;
+	display: inline-block;
+	height: 60px;
+	width: 150px;
+	line-height: 150%;
+	text-align: center;
+}
+.info {
+	margin-top: 0px;
+	padding: 10px;
+}
+.form {
+	text-align: center;
+	background-color: @bg-color;
+	padding:10px;
+	& p {
+		margin-top: 10px;
+	}
+	& label {
+		display:block;
+		position: absolute;
+		background-color: @bglight-color;
+		left: 50%;
+		transform: translate(-50%,0);
+	}
+	& button {
+		display:block;
+		background-color: @btn-color;
+	    color: @text-color;
+	    border: none;
+	    border-radius: 8px;
+	    margin:auto;
+	    margin-top: 10px;
+	    width: 80%;
+	    &:hover {
+	    	background-color: darken(@btn-color, 10%);
+	    }
+	}
+	& input {
+		border: 1px solid grey;
+		border-radius: 8px;
+		margin-top: 10px;
+		width:80%;
+	}
+
+}
+
+.adv {
+	margin-top: 30px;
+	text-align: center;
+}
+.slider {
+	margin-top: 30px;
+}
+.sliderBlock {
+	text-align: center;
+	 & img {
+	 display:block;
+	 margin:auto;
+}
+    & h3 {
+    	font-weight: bold;
+    }
+}
+.prevarrow {
+	position: absolute;
+	top:0%;
+	right: 0%;
+	background-image:url(../img/webislamov/keyboard-left-right-button.png);
+	z-index: 99;
+	height: 5rem;
+	width: 5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border:none;
+	background-color: @bg-color;
+	outline-style: none;
+	
+}
+.nextArrow {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background-image:url(../img/webislamov/left.png);
+	z-index: 99;
+	height: 5rem;
+	width: 5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border:none;
+	background-color: @bg-color;
+	outline-style: none;
+	}
+
